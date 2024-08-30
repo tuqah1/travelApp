@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.travelApp{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    height: 100%;
+    margin: 0;
+  
+}
+
+.travelHead{
+    height: 130px;
+    padding: 40px 30px;
+    font-size: 50px
+}
+.travelContent{
+    height: 700px;
+    margin: 20px 0;
+    background-color: rgb(219, 238, 250);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.location{
+font-size: 25px;
+font-weight: bold;
+}
+.depart{
+    font-size: 25px;
+    font-weight: bold;
+}
+.return{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.travelImg img{
+    width: 300px;
+    height: 300px;
+ }
+footer {
+    height: 80px;
+} 
+input {
+    margin-left: 10px;
+    height: 30px;
+    padding: 10px;
+    background-color: #fff;
+    color: rgb(57, 129, 178);
+    border: solid rgb(57, 129, 178);
+    border-radius: 5px;
+}
+input:hover {
+    height: 35px;
+    border-color: #fff;
+}
+
+#general{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+p {
+    color: rgb(36, 94, 132);
+    font-weight: bold;
+}
+.weatherInfo {
+    font-size: 20px;
+}
+@media (max-width: 767px) {
+    .travelContent{
+        grid-template-columns: auto ;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) {
+    .travelHead{
+        font-size: 60px;
+        
+    }
+    .travelContent{
+        padding: 20px 0 20px 70px;
+    }
+    .travelImg img{
+        width: 400px;
+        height: 400px;
+     }
+     .travelInfo{
+        margin-left: 100px;
+     }
+     .location{
+     font-size: 30px;
+     font-weight: bold;
+     }
+     .depart{
+         font-size: 30px;
+         font-weight: bold;
+     }
+     .return{
+         font-size: 30px;
+         font-weight: bold;
+     }
+     .travelImg{
+      margin-left: 200px;
+     }
+   
+
+}
+ /* #app{
+    margin-top: 10px;
+    padding: 40px;
+    height:70vh;
+    background: #ebd9dc;
+    color: #de3af0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.entry{
+    background: white;
+    height: 150px;
+    width: 420px;
+    color: black;
+    margin-left: 60px;
+}
+label{
+    display:block;
+    font-size: 27px;
+}
+textarea{
+    background:white;
+    color: black;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+input {
+    color: #fffff8;
+    border-radius: 5px;
+    height: 30px;
+    border-color: #de3af0;
+}
+
+button {
+    background-color: #de3af0;
+    color: #fffff8;
+    width: 100px;
+    height: 30px;
+    border: solid #fffff8 ;
+    border-radius: 5px;
+}
+
+.feel {
+    margin-left: 60px;
+} */

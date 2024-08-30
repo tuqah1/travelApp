@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "travelApp">
+      <header class="travelHead">
+        Travel Planner
+      </header>
+      <section class="travelContent">
+        <div class="travelInfo">
+          <div class="userInfo" id="userInfo">
+            <div class="location">
+              <label for="loc">My trip to:</label>
+              <input type="text" id="loc" placeholder="enter location" >
+            </div>
+            <div class="depart">
+              <label for="dep">Departing:</label>
+              <input type="date" id="departDate" required name="departDate">
+            </div>
+            <div class="return">
+              <label for="ret">Returning:</label>
+              <input type="date" name="return" id="returnDate" >
+            </div>
+            <button id="generate" type="submit">Details</button>
+          </div>
+          <div class="outInfo">
+            <div id="general">
+              country:
+            </div>
+            <div class="weatherInfo">
+              <p>Typical weather for then is:</p>
+              <div id="coordinate"></div>
+              <div id="discription"></div>
+              <div id="travelTime"></div>
+            </div>
+          </div>
+        </div>
+        <div class="travelImg">
+          <img src="https://cdn.getyourguide.com/img/tour/63a5bcf71db77.jpeg/145.jpg" alt="" id="locImg">
+        </div>
+
+      </section>
+      <footer>
+
+      </footer>
+       
+    </div>
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', async() => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }
+  </script>
+</body>
+</html>
