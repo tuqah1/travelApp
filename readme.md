@@ -10,18 +10,21 @@ Jest for testing
 HTML, CSS, JavaScript for the frontend
 
 
+## Prerequisites
 
+- **Node.js**: This project requires Node.js version `18.17.0`. Please make sure to use this version to avoid any compatibility issues.
+- **npm**: Ensure npm is up-to-date, as it comes bundled with Node.js.
 ## Running the Application
 
 ### Start the development server:
 npm run build-prod
-npm start
+npm start it is work at port 5500
 
 ### Testing
 npm test
 
 ### activtae development enviroment
-npm run build-dev
+npm run build-dev it is work at port 8081
 
 
 ## API Integration
