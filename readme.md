@@ -24,7 +24,7 @@ npm start it is work at port 5500
 npm test
 
 ### activtae development enviroment
-npm run build-dev it is work at port 8081
+npm run build-dev it is work at port 3000
 
 
 ## API Integration
@@ -36,3 +36,7 @@ Express
 Body-Parser
 Cors
 webpack
+
+## note of service worker
+if you turn off the server the page will still work and to see it open appliction on in inspect at http://localhost:5500/ 
+

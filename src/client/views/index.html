@@ -54,8 +54,14 @@
       // Check that service workers are supported
       if ('serviceWorker' in navigator) {
           // Use the window load event to keep the page load performant
-          window.addEventListener('load', async() => {
-              navigator.serviceWorker.register('/service-worker.js');
+          window.addEventListener('load', async () => {
+              navigator.serviceWorker.register('/service-worker.js')
+              .then(registration => {
+                  console.log('Service Worker registered with scope:', registration.scope);
+              })
+              .catch(error => {
+                  console.error('Service Worker registration failed:', error);
+              });
           });
       }
   </script>
